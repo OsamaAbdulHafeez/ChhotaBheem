@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-attachment: fixed!important;
+    background: url(./Assets/Images/BackGroundImage.jpg) no-repeat center center;
+    background-size: 130% 100%;
+    background-color: #ffcc01;
+    font-family: Arial;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px 0px 50px;  
+}
+.navbar .logo{
+    background-color: #fff;
+    padding: 10px 10px 20px 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 10%;
+}
+.navbar .logo img{
+    width: 100%;
+}
+.navbar .logo img:hover{
+    animation: LogoAnimation 1s linear;
+}
+@keyframes LogoAnimation {
+    0%{
+        transform: rotateX(0);
+    }
+    50%{
+        transform: rotateX(180deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu ul li{
+    list-style: none;
+    
+    padding: 15px 30px;
+}
+.menu ul li:hover{
+    background-color: #ffea99;
+    border-radius: 50%;
+    animation: characterRotate 0.7s linear;
+}
+@keyframes characterRotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+}
+.menu ul li img{
+    width: 100%;
+}
+/* Section GalaxyRush */
+.GalaxyRush{
+    position: relative;
+    width: 45vw;
+    margin: auto;
+    perspective: 100px;
+    perspective-origin: left;
+}
+.GalaxyRush img{
+    width: 100%;
+    border: 5px solid #fff;
+}
+.GridContainer{
+    background-color: #f1f1f1;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 65% 34%;
+    column-gap: 15px;
+    
+}
+.GridColumn{
+    background-color: #fff;
+}
+.coulmn1Row1{
+    width: 100%;
+}
+.coulmn1Row1 img{
+    width: 100%;
+}
+.PopularGames{
+    background-color: #320903;
+}
+.PopularGames h1{
+    width: fit-content;
+    font-size: 14px;
+    padding-left: 13px;
+    margin-bottom: 0;
+    color: #fff;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 35px;
+    margin-bottom: 0;
+    padding: 0 30px 0 13px;
+    border-radius: 0 20px 0 0/0 40px 0 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 0 1px 1px #f3ab46;
+    background-image: -moz-linear-gradient(bottom,#c43e2f,#d16428);
+}
+.GameCategories{
+    width: 100%;
+    display: grid;
+    padding: 6px;
+    flex-wrap: nowrap;
+    grid-template-columns: auto auto auto;
+    column-gap:10px;
+    flex-wrap: wrap;
+}
+.GameCategory{
+    background-color: #ffeb3b;
+    position: relative;
+    margin: 5px auto;
+}
+.GameCategory:hover{
+    transition: 1s;
+}
+.GameCategory:hover::before{
+    content: '';
+    background-color: #000;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    transition: 1s;
+}
+.GameCategory img{
+    width: 100%
+}
+.GameCategory h2{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.GameCategory i{
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    top: 28%;
+    left: 38%;
+    display: none;
+}
+.GameCategory:hover i{
+    display: block;
+    z-index: 1;
+    transition: 1s;
+}
+.VideoCategories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    padding: 10px 6px;
+    column-gap: 10px;
+}
+.videoCategory{
+    background-color: #edebeb;
+    position: relative;
+    margin: 5px auto;
+}
+.videoCategory:hover::before{
+    content: '';
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    transition: 1s;
+}
+.videoCategory img{
+    width: 100%;
+}
+.videoCategory h2{
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0;
+    /* height: 65px; */
+    line-height: 1.8;
+}
+.videoCategory i{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    display: none;
+}
+.videoCategory:hover i{
+    display: block;
+    z-index: 1;
+}
+.StoriesCategories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    padding: 10px 6px;
+    column-gap: 10px;
+}
+.StoriesCategory{
+    width: 100%;
+    background-color: #edebeb;
+    position: relative;
+    margin: 5px auto;
+}
+.StoriesCategory img{
+    width:100%
+}
+.StoriesCategory h2{
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0;
+    height: 65px;
+    line-height: 1.8;
+}
+.AudioDiv{
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+.AudioBoxstyle{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 79% 6%;
+    column-gap: 20px;
+    position: relative;
+    background: linear-gradient(#cd5c29, #561e13);
+    padding: 20px 10px;
+}
+.playButton img{
+    width: 100%;
+}
+.audiBox audio{
+    background-color: #3ffb06;
+}
+.audiorange{
+    align-self: center;
+    margin-bottom: -18px;
+}
+.audiorange input{
+    width: 100%;
+}
+.AudioDiv p{
+    text-align: center;
+    color: #fff;
+}
+.musicButtton{
+    align-self: center;
+}
+.musicButtton img{
+    width: 100%;
+}
+.AudioPalyer ul{
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+.AudioPalyer ul li{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.AudioPalyer ul li img{
+    width: 25px;
+}
+.AudioPalyer ul li h2{
+    /* width: 7%; */
+    align-self: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.MahaShaitaan{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    margin-top: 10px;
+}
+.MahaShaitaan img{
+    width: 100%;
+}
+#BheemSmallPic{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    width: 100%;
+    
+}
+#BheemSmallPic img{
+    width: 15%;
+    height: 50px;
+    border: 2px solid #ddd; 
+}
+#BheemSmallText p{
+    color: #fff;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 14px;
+}
+#BheemSmallText p:nth-child(2){
+    padding-top: 0px;
+}
+#FollowPage{
+    position: absolute;
+    top: 100px;
+}
+#FollowPage ul{
+    display: flex;
+    justify-content: space-between;
+}
+#FollowPage ul li{
+    list-style: none;
+    background-color: #edebeb;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 15px;
+}
+#FollowPage ul li:nth-child(2){
+    margin-left: 145px;
+}
+/* footer */
+footer{
+    background-color: rgb(90, 17, 3);
+    width: 95%;
+    margin: auto;
+    padding: 15px 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.Subscribe{
+    width: 60%;
+}
+.Subscribe h1{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.email input{
+    width: 45%;
+    height: 30px;
+}
+.email button{
+    background-color: #ff5b5b;
+    border: none;
+    height: 33px;
+    color: #1c1b1b;
+    border-radius: 4px;
+    padding: 0px 10px;
+}
+.WebsitePolicy ul{
+    display: flex;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.WebsitePolicy ul li{
+    list-style: none;
+    color: #ff5b47;
+    margin-left: 25px;
+    font-size: 14px;
+}
+.BusinessEnquiry{
+    align-self: center;
+}
+.BusinessEnquiry h1{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.BusinessEnquiry h1 a{
+    color: #ff5b47;
+}
+.SocialMediaIcon{
+    margin-right: 10px;
+}
+.SocialMediaIcon ul{
+    display: flex;
+    float: right;
+    margin-top: 10px;
+}
+.SocialMediaIcon ul li{
+    list-style: none;
+    width: 40px;
+    margin-left: 10px;
+}
+.SocialMediaIcon ul li img{
+    width: 100%;
+}
+.Copyright{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+.Copyright a{
+    color: #ff5b5b;
+    text-decoration: none;
+}

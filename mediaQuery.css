@@ -1,0 +1,26 @@
+@media screen and (max-width:1200px) {
+    .GalaxyRush{
+        width: 70%;
+    }
+}
+@media screen and (max-width:900px) {
+    .menu ul li img{
+        width: 150%;
+    }
+    .navbar .logo{
+        width: 20%;
+    }
+    .GalaxyRush{
+        width: 90%;
+    }
+}
+@media screen and (max-width:750px){
+    .menu ul li img{
+        width: 200%;
+    }
+}
+@media screen and (max-width:700px){
+    .menu ul li img{
+        width: 250%;
+    }
+}
