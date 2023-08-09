@@ -3,24 +3,221 @@
         width: 70%;
     }
 }
+
+@media screen and (max-width:1000px) {
+    .navbar .logo{
+        width: 12%;
+    }
+    .footer{
+        display: block;
+    }
+    .Subscribe{
+        width: 100%;
+    }
+    .Subscribe h1{
+        text-align: center;
+        font-size: 18px;
+    }
+    .email{
+        text-align: center;
+    }
+    .email input{
+        width: 80%;
+    }
+    .WebsitePolicy{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    .WebsitePolicy{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .WebsitePolicy li{
+        text-align: center;
+        margin-left: 0px;
+        /* width: 10%; */
+        /* margin: auto; */
+    }
+    .BusinessEnquiry{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .SocialMediaIcon{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .SocialMediaIcon ul{
+        margin: auto;
+        width: 20%;
+    }
+    .SocialMediaIcon ul li{
+        margin: auto;
+    }
+}
+@media screen and (max-width:950px) {
+    .navbar .logo{
+        width: 13%;
+        padding: 10px 10px 15px 10px;
+    }
+}
 @media screen and (max-width:900px) {
+    .menu ul li{
+        width: 14vw;
+        padding: 10px 20px;
+    }
     .menu ul li img{
-        width: 150%;
+        width: 100%;  
     }
     .navbar .logo{
-        width: 20%;
+        width: 18%;
     }
     .GalaxyRush{
         width: 90%;
     }
+    .email input{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:850px) {
+    .menu ul li{
+        width: 14vw;
+        padding: 10px 20px;
+    }
+    .menu ul li img{
+        width: 100%;  
+    }
+}
+@media screen and (max-width:800px) {
+    .menu ul li{
+        width: 14vw;
+        padding: 8px 16px;
+    }
+    .menu ul li img{
+        width: 100%;  
+    }
+    .WebsitePolicy{
+        width: 100%;
+    }
 }
 @media screen and (max-width:750px){
+    .menu ul li{
+        width: 14vw;
+        padding: 8px 16px;
+    }
     .menu ul li img{
-        width: 200%;
+        width: 100%;
+    }
+    .navbar .logo{
+        width: 22%;
+        padding: 5px 5px 10px 5px;
+    }
+    .BusinessEnquiry h1{
+        font-size: 13px;
+        font-family: sans-serif;
+    }
+    .Copyright{
+        font-size: 15px;
     }
 }
 @media screen and (max-width:700px){
-    .menu ul li img{
-        width: 250%;
+    .menu ul li{
+        width: 14vw;
+        padding: 8px 16px;
     }
+    .menu ul li img{
+        width: 100%;
+    }
+    .navbar .logo{
+        width: 24%;
+        padding: 5px 5px 10px 5px;
+    }
+    .SocialMediaIcon ul{
+        width: 40%;
+    }
+}
+@media screen and (max-width:650px){
+    .menu ul li{
+        width: 14vw;
+        padding: 8px 16px;
+    }
+    .menu ul li img{
+        width: 100%;
+    }
+    .navbar .logo{
+        width: 26%;
+        padding: 5px 5px 10px 5px;
+    }
+    .email input{
+        width: 60%;
+    }
+    .email button{
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+}
+@media screen and (max-width:600px){
+    .menu ul li{
+        width: 14vw;
+        padding: 8px 16px;
+    }
+    .menu ul li img{
+        width: 100%;
+    }
+    .navbar .logo{
+        width: 28%;
+        padding: 5px 5px 10px 5px;
+    }
+    .Copyright{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:580px){
+    .navbar{
+        display: flex;
+        width: 100%;
+        margin-bottom: 8px;
+        margin-top: 5px;
+    }
+    .menu{
+        display: none;
+    }
+    .Hamburger i{
+        display: block;
+        margin-right: 10px;
+    }
+    .navbar .logo{
+        width: 15%;
+        padding: 5px 5px 10px 5px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:500px){
+    .BusinessEnquiry h1{
+        font-size: 12px;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+    .email input{
+        width: 100%;
+    }
+    .email button{
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+    .WebsitePolicy ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .WebsitePolicy ul li{
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:460px){
+    
+    
 }
